@@ -2,7 +2,9 @@
 #define BASICTENFEATURESEXTRACTOR_FEATUREEXTRACTOR_H
 
 #include <Arduino.h>
+#ifndef N_FEATURES
 #define N_FEATURES 30
+#endif
 
 namespace FeatureExtractor {
     namespace TimeDomain {
