@@ -1,7 +1,12 @@
 #ifndef BASICTENFEATURESEXTRACTOR_FEATUREEXTRACTOR_H
 #define BASICTENFEATURESEXTRACTOR_FEATUREEXTRACTOR_H
 
+#ifdef NATIVE_ENV
+#include <cmath>
+#else
 #include <Arduino.h>
+#endif
+
 #ifndef N_FEATURES
 #define N_FEATURES 30
 #endif
