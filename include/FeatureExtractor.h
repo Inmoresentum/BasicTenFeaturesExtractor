@@ -7,10 +7,6 @@
 #include <Arduino.h>
 #endif
 
-#ifndef N_FEATURES
-#define N_FEATURES 30
-#endif
-
 namespace FeatureExtractor {
     namespace TimeDomain {
         class BasicFeature {
@@ -27,17 +23,23 @@ namespace FeatureExtractor {
                 }
             }
 
-            float *calculateFeatures(float (*data)[N_FEATURES], int n) {
-                auto *features = new float[N_FEATURES];
+            float *calculateFeatures(float (*data)[3], int n) {
+                auto *features = new float[3 * 10];
                 for (int i = 0; i < 3; i++) {
-                    bubbleSort(data[i], n);
+                    // Extract the column data
+                    float columnData[n];
+                    for (int j = 0; j < n; j++) {
+                        columnData[j] = data[j][i];
+                    }
+
+                    bubbleSort(columnData, n);
                     float sum = 0;
                     float sq_sum = 0;
-                    float min_val = data[0][i];
-                    float max_val = data[0][i];
+                    float min_val = columnData[0];
+                    float max_val = columnData[0];
 
                     for (int j = 0; j < n; j++) {
-                        float val = data[j][i];
+                        float val = columnData[j];
                         sum += val;
                         sq_sum += val * val;
                         min_val = std::min(min_val, val);
@@ -49,7 +51,7 @@ namespace FeatureExtractor {
                     float std_dev = std::sqrt(variance);
                     float rms = std::sqrt(sq_sum / (float) n);
                     float abs_max = std::max(std::abs(min_val), std::abs(max_val));
-                    float median = data[n / 2][i];
+                    float median = columnData[n / 2];
 
                     features[i * 10 + 0] = sum;
                     features[i * 10 + 1] = median;
