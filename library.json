@@ -1,0 +1,20 @@
+{
+  "name": "BasicTenFeaturesExtractor",
+  "version": "0.7.0",
+  "description": "Library for extracting basic time domain dependent features from a window/segment of 3-axis sensor data",
+  "keywords": "feature, feature extractor, feature extraction, time domain, esp32, arduino, esp-idf, sliding window, segment",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Inmoresentum/BasicTenFeaturesExtractor.git"
+  },
+  "authors": [
+    {
+      "name": "Athar Noor Mohammad Rafee ",
+      "email": "noor.mohammad.rafee@g.bracu.ac.bd",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
