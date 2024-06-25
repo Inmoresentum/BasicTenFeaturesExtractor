@@ -1,7 +1,9 @@
 #include <Arduino.h>
 #include "FeatureExtractor.h"
 
+// Here define the length of the window or hardcode
 #define SLIDING_WINDOW_LENGTH 101
+// Here the row number should be 3 (tri axis accelerometer or similar sensor)
 #define ROW_NUMBER 3
 
 FeatureExtractor::TimeDomain::BasicFeature basicFeatureExtractor;
@@ -77,11 +79,13 @@ void setup() {
 }
 
 void loop() {
+    // pass the window and window length
     auto extractedFeature = basicFeatureExtractor.calculateFeatures(sampleOneWindow, SLIDING_WINDOW_LENGTH);
-    // Do something with the extracted features
+    // Now you can feed the extracted features to model(s)
     for (int i = 0; i < 30; i++) {
         Serial.println(extractedFeature[i]);
     }
+
     Serial.println("Done printing features");
     delay(2000);
 }
