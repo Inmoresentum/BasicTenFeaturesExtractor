@@ -35,3 +35,24 @@ The features this library extracts are:
 * *maximum*,
 * *absolute maximum*, and
 * *minimum*.
+
+## [!IMPORTANT] Citation
+
+If you are using this library for your scholarly works then please cite
+accordingly.
+
+```bibtex
+@software{Athar_Noor_Mohammad_Rafee_BasicTenFeatureExtractor,
+    author = {Athar Noor Mohammad Rafee},
+    license = {GPL-3.0},
+    title = {{BasicTenFeatureExtractor}},
+    url = {https://github.com/Inmoresentum/BasicTenFeaturesExtractor}
+}
+```
+
+&#160;
+
+<p align="center">Copyright &copy; 2024-present 
+   <a href="https://github.com/Inmoresentum" target="_blank">Inmoresentum</a>
+    and Contributors
+</p>
