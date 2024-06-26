@@ -1,0 +1,31 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: BasicTenFeatureExtractor
+message: >-
+  A simple PlatformIO library for extracting basic ten
+  features per axis from a window or segment of 3 axis
+  accelerometer or similar sensor data for ESP32 or similar
+  boards.
+type: software
+authors:
+  - email: noor.mohammad.rafee@g.bracu.ac.bd
+    affiliation: BRAC University
+    orcid: 'https://orcid.org/0009-0002-3608-6478'
+    given-names: Athar Noor Mohammad Rafee
+repository-code: 'https://github.com/Inmoresentum/BasicTenFeaturesExtractor'
+abstract: >-
+  A simple PlatformIO Arduino library to extract ten
+  features per x, y, and z axis of the collected
+  accelerometer or similar sensor data (one segment at a
+  time). The features extracted by the library are: sum,
+  median, mean, length, standard deviation, variance,
+  root-mean-square, maximum, absolute maximum, and minimum.
+keywords:
+  - feature extractor
+  - arduino feature extractor
+  - esp32 basic feature extractor
+  - time domain
+  - sliding window
+license: GPL-3.0
