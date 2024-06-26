@@ -15,9 +15,9 @@
 </h1>
 
 A simple PlatformIO Arduino library to extract ten features per x, y,
-and z axis of the collected accelerometer or similar sensor data from a window.
+and z axis of the collected segment of accelerometer or similar sensor data.
 
-The features the library calculates are:
+The features this library extracts are:
 
 * *sum*,
 * *median*,
