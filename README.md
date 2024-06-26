@@ -32,6 +32,9 @@ The features this library extracts are:
 * *absolute maximum*, and
 * *minimum*.
 
+> [!NOTE]
+> For examples on how to use the library, please check out [examples](examples) folders.
+
 ## Citation
 
 > [!IMPORTANT]
