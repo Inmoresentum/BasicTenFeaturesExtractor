@@ -1,5 +1,5 @@
 /*
- * BasicTenFeatureExtractor, A simple PlatformIO Arduino library to extract ten features per x, y,
+ * BasicTenFeaturesExtractor, A simple PlatformIO Arduino library to extract ten features per x, y,
  * and z axis of the collected accelerometer or similar sensor data from a window
  * Copyright (c) 2024 Inmoresentum and contributors
  *

@@ -1,4 +1,4 @@
-<h1 align="center">BasicTenFeatureExtractor</h1>
+<h1 align="center">BasicTenFeaturesExtractor</h1>
 <h1 align="center">
     <div align="center">
         <a href="https://www.espressif.com">
@@ -47,7 +47,7 @@ The features this library extracts are:
 @software{Athar_Noor_Mohammad_Rafee_BasicTenFeatureExtractor,
     author = {Athar Noor Mohammad Rafee},
     license = {GPL-3.0},
-    title = {{BasicTenFeatureExtractor}},
+    title = {{BasicTenFeaturesExtractor}},
     url = {https://github.com/Inmoresentum/BasicTenFeaturesExtractor}
 }
 ```
