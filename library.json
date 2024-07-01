@@ -1,6 +1,6 @@
 {
   "name": "BasicTenFeaturesExtractor",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Library for extracting basic time domain dependent features from a window/segment of 3-axis sensor data",
   "keywords": "feature, feature extractor, feature extraction, time domain, esp32, arduino, esp-idf, sliding window, segment",
   "repository": {
