@@ -4,7 +4,7 @@
         <a href="https://www.espressif.com">
             <img src="https://img.shields.io/badge/espressif32-E7352C.svg?style=for-the-badge&logo=espressif&logoColor=white"  alt="whatever"/>
         </a>
-        <a href="https://www.arduino.cc/reference/en/libraries/esp8266-framework/">
+        <a href="https://github.com/espressif/arduino-esp32">
             <img src="https://img.shields.io/badge/ESP32 Arduino Framework-00979D?style=for-the-badge&logo=Arduino&logoColor=white"  alt="whatever"/>
         </a>
     </div>
